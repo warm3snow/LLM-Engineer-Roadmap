@@ -5,6 +5,7 @@
 ## 第一阶段：打牢基础与构建工具链 (1-4 周)
 
 ### 目标：
+
 1. 掌握 LLM 核心原理。
 2. 快速构建开发环境和工具链。
 3. 从基础项目入手理解实战。
@@ -12,6 +13,7 @@
 ---
 
 ### 每周任务概览：
+
 - **周一至周五：学习 + 小项目尝试**
 - **周末：整理笔记 + 输出成果（博客/代码/分享）**
 
@@ -20,80 +22,88 @@
 ### **第1周：了解 LLM 基础与搭建开发环境**
 
 #### 每天具体任务：
+
 - **Day 1：开篇理论学习 + 环境配置**
-    - 阅读 Transformer 论文《Attention is All You Need》，理解模型结构。
-    - 配置开发环境：安装 Python、Hugging Face Transformers 库。
-    - 熟悉 Jupyter Notebook 和 GPU 加速环境（如 Colab 或本地 GPU）。
 
+  - 阅读 Transformer 论文《Attention is All You Need》，理解模型结构。
+  - 配置开发环境：安装 Python、PyTorch库。
+  - 熟悉 Jupyter Notebook 和 GPU 加速环境（如 Colab 或本地 GPU）。
 - **Day 2：探索常见 LLM 工具链**
-    - 快速上手 Hugging Face Transformers：运行官方的“文本生成”任务例子。
-    - 了解 OpenAI API、LLaMA2 等平台能力，注册所需账户。
-    - 用 OpenAI Playground 测试 GPT-4。
 
+  - 快速上手 Hugging Face Transformers：运行官方的“文本生成”任务例子。
+  - 了解 OpenAI API、LLaMA2 等平台能力，注册所需账户。
+  - 用 OpenAI Playground 测试 GPT-4。
 - **Day 3-4：掌握 LLM 基础任务**
-    - 实战练手任务：
-    - 文本分类：使用 BERT 微调完成情感分析（数据集：IMDB）。
-    - 文本生成：用 GPT 简单生成一段文章摘要或故事。
-    - 学会数据加载与预处理（`datasets`库）。
 
+  - 实战练手任务：
+  - 文本分类：使用 BERT 微调完成情感分析（数据集：IMDB）。
+  - 文本生成：用 GPT 简单生成一段文章摘要或故事。
+  - 学会数据加载与预处理（`datasets`库）。
 - **Day 5：阅读源码，探索 Hugging Face**
-    - 阅读 Hugging Face Transformers 源码部分：
-    - Tokenizer 的实现。
-    - 模型加载（`AutoModel`）。
-    - 写边学边记的笔记。
 
+  - 阅读 Hugging Face Transformers 源码部分：
+  - Tokenizer 的实现。
+  - 模型加载（`AutoModel`）。
+  - 写边学边记的笔记。
 - **周末任务：复习 + 输出成果**
-    - 撰写博客：《从零开始使用 Hugging Face 分析 LLM 应用》
-    - 在 GitHub 分享完整代码和运行测试说明。
+
+  - 撰写博客：《从零开始使用 Hugging Face 分析 LLM 应用》
+  - 在 GitHub 分享完整代码和运行测试说明。
 
 ---
 
 ### **第2周：初步深入 LLM 应用实践**
 
 #### 每天具体任务：
+
 - **Day 1：Fine-tuning 基础**
-    - 学习微调（Fine-tuning）概念。
-    - 了解参数高效微调方法（LoRA、Prefix Tuning）。
 
+  - 学习微调（Fine-tuning）概念。
+  - 了解参数高效微调方法（LoRA、Prefix Tuning）。
 - **Day 2-4：动手做 Fine-tuning 项目**
-    - 任务：使用 BERT 完成情感分类模型微调。
-    - 项目实践步骤：
-    1. 数据准备（加载和预处理）。
-    2. 使用 Hugging Face 的 Trainer 进行 Fine-tune。
-    3. 评估微调后模型（查看准确率和损失）。
 
+  - 任务：使用 BERT 完成情感分类模型微调。
+  - 项目实践步骤：
+
+  1. 数据准备（加载和预处理）。
+  2. 使用 Hugging Face 的 Trainer 进行 Fine-tune。
+  3. 评估微调后模型（查看准确率和损失）。
 - **Day 5：项目部署**
-    - 把训练好的模型部署在 Hugging Face Spaces。
-    - 使用 Streamlit 快速搭建简单的前端页面（输入文本，输出分类结果）。
 
+  - 把训练好的模型部署在 Hugging Face Spaces。
+  - 使用 Streamlit 快速搭建简单的前端页面（输入文本，输出分类结果）。
 - **周末任务：优化项目 + 输出成果**
-    - 发布 Fine-tuning 项目的文档和代码到 GitHub。
-    - 撰写技术教程：《快速入门：Fine-tuning 你的 LLM 项目》。
+
+  - 发布 Fine-tuning 项目的文档和代码到 GitHub。
+  - 撰写技术教程：《快速入门：Fine-tuning 你的 LLM 项目》。
 
 ---
 
 ### **第3-4周：Prompt Engineering 实操**
 
 #### 每天具体任务：
+
 - **Day 1-3：掌握 Prompt Engineering**
-    - 使用 OpenAI GPT-4 API 测试以下场景：
-    - 文本摘要生成：输入长文章，输出紧凑摘要。
-    - 问答系统：输入上下文，回答用户问题。
-    - Zero-shot 和 Few-shot 测试：增加上下文本，观察影响。
 
+  - 使用 OpenAI GPT-4 API 测试以下场景：
+  - 文本摘要生成：输入长文章，输出紧凑摘要。
+  - 问答系统：输入上下文，回答用户问题。
+  - Zero-shot 和 Few-shot 测试：增加上下文本，观察影响。
 - **Day 4-5：提升 Prompt 技能**
-    - 使用 PromptBench 工具观察 Prompt 格式对生成效果的影响。
-    - 测试聊天上下文（Chatbot）：针对续问设计更好的 Prompt 策略。
 
+  - 使用 PromptBench 工具观察 Prompt 格式对生成效果的影响。
+  - 测试聊天上下文（Chatbot）：针对续问设计更好的 Prompt 策略。
 - **周末任务：结合 Fine-tuning 项目优化 Prompt**
-    - 为上一阶段训练的 BERT 模型设计最优 Prompt 并测试提升效果。
-    - 写总结：《Prompt Engineering 实战：从基础到进阶》。
+
+  - 为上一阶段训练的 BERT 模型设计最优 Prompt 并测试提升效果。
+  - 写总结：《Prompt Engineering 实战：从基础到进阶》。
 
 ---
 
 ## 第二阶段：深度项目开发与实现 (5-8 周)
 
 ### 目标：
+
 1. 开始真实场景的大规模项目开发。
 2. 产出能够公开展示的完整案例。
 
@@ -102,19 +112,22 @@
 ### **第5-6周：项目1 —— 行业应用方向**
 
 #### 项目：基于 ChatGPT + LangChain 开发 "行业定制问答机器人"
+
 - 使用场景：适配电商/金融场景，定义专属知识库回答客户提问。
 
 #### 核心步骤：
+
 1. **数据准备：**
-    - 构建一个行业知识库，将关键文档转化为检索格式（PDF、Excel）。
+   - 构建一个行业知识库，将关键文档转化为检索格式（PDF、Excel）。
 2. **检索增强生成（RAG）：**
-    - 用 FAISS 实现语义搜索。
-    - 编写 Pipeline，将检索片段拼接到 Prompt 中。
+   - 用 FAISS 实现语义搜索。
+   - 编写 Pipeline，将检索片段拼接到 Prompt 中。
 3. **部署：**
-    - 使用 LangChain 处理连续对话上下文。
-    - 在前端简单封装 Flask 或 FastAPI 接口。
+   - 使用 LangChain 处理连续对话上下文。
+   - 在前端简单封装 Flask 或 FastAPI 接口。
 
 #### 提交成果：
+
 - 构建一个完整系统，允许用户输入提问，系统回答专业问题。
 - 输出技术结果文档和运行 API 的说明。
 
@@ -123,19 +136,22 @@
 ### **第7-8周：项目2 —— 偏研发方向**
 
 #### 项目：轻量高效 LLM 微调 + 部署
+
 - 使用 LoRA 高效微调 LLaMA 的小型模型。
 - 将精度量化为 INT8，测试本地资源下的推理性能。
 
 #### 核心步骤：
+
 1. **实现 LoRA 微调：**
-    - 手动编写 Fine-tuning LoRA 的全过程。
-    - 记录 GPU 使用效果和模型参数大小差异。
+   - 手动编写 Fine-tuning LoRA 的全过程。
+   - 记录 GPU 使用效果和模型参数大小差异。
 2. **模型压缩：**
-    - 实现模型量化，加速推理速度（如使用 `bitsandbytes` 库）。
+   - 实现模型量化，加速推理速度（如使用 `bitsandbytes` 库）。
 3. **本地部署：**
-    - 将优化后的模型部署在低资源设备（如树莓派或 Jetson）。
+   - 将优化后的模型部署在低资源设备（如树莓派或 Jetson）。
 
 #### 提交成果：
+
 - 输出微调/轻量化模型性能与结果对比。
 - 在 GitHub 发布轻量脚本和使用教程。
 
@@ -144,33 +160,38 @@
 ## 第三阶段：展示成果、建立行业影响力 (9-12 周)
 
 ### 目标：
+
 1. 将成果输出到社区，积累个人影响力。
 2. 参与开源和交流，建立领域的技术人脉圈。
 
 ---
 
 ### **第9-10周：参与开源社区**
+
 - 学习 Hugging Face Transformers 的源码并尝试贡献：
-    - 提交文档改进 PR。
-    - 修复简单 Issue 或参与模块开发。
+  - 提交文档改进 PR。
+  - 修复简单 Issue 或参与模块开发。
 - 参与 LangChain、FAISS 或其他热门项目的开发讨论。
 
 ---
 
 ### **第11-12周：展示成果**
+
 1. **技术输出：**
-    - 在 GitHub 综合整理前两阶段项目代码。
-    - 撰写博客或视频内容：《3 个月如何精通 LLM 并完成行业应用项目》。
+   - 在 GitHub 综合整理前两阶段项目代码。
+   - 撰写博客或视频内容：《3 个月如何精通 LLM 并完成行业应用项目》。
 2. **行业交流：**
-    - 发布 LinkedIn 技术分享，交流经验。
-    - 参与 Hackathon 或 Kaggle 竞赛，积累经验和人脉。
+   - 发布 LinkedIn 技术分享，交流经验。
+   - 参与 Hackathon 或 Kaggle 竞赛，积累经验和人脉。
 
 ---
 
 ## 总结
+
 通过三阶段的实践学习，你将从基础技术到高级应用逐步掌握 LLM，并通过项目和开源代码展示能力，逐步在领域内建立影响力。
 
 > **后续进阶建议：**
+>
 > - 继续跟踪领域前沿论文每月至少研读 2 篇。
 > - 挑战高难度的 LLM 任务（如多模态 LLM 开发）。
 > - 定期复盘知识，并在社区中持续发声。
